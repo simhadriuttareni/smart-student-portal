@@ -1,41 +1,42 @@
-# Smart Student Portal Backend
+# 🎓 Smart Student Portal – Backend API
 
-This is a Spring Boot REST API backend project for managing student data. It provides full CRUD (Create, Read, Update, Delete) operations connected to a PostgreSQL database.
+A Spring Boot-based RESTful API to manage students and their data efficiently. This is part of a complete student management system.
 
-## Features
+---
 
-- RESTful API endpoints for students management
-- PostgreSQL integration with JPA/Hibernate
-- Exception handling with custom exceptions
-- Validations and error responses
-- Fully tested with Postman and curl
+## 🚀 Features
 
-## Technologies Used
+- Add, update, delete, and fetch students
+- REST API with proper HTTP responses
+- Custom Exception Handling
+- PostgreSQL integration
+- Layered architecture (Controller, Service, Repository)
 
-- Java 17 (or your Java version)
-- Spring Boot 3.x
+---
+
+## 📦 Tech Stack
+
+- Java 17
+- Spring Boot
+- Spring Web
 - Spring Data JPA
 - PostgreSQL
 - Maven
-- Postman (for API testing)
 
-## Getting Started
+---
 
-### Prerequisites
+## 🔧 API Endpoints
 
-- Java JDK 11 or higher installed
-- PostgreSQL installed and running
-- Maven installed (or use IDE built-in Maven)
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET    | `/api/students` | Fetch all students |
+| GET    | `/api/students/{id}` | Get student by ID |
+| POST   | `/api/students` | Add new student |
+| PUT    | `/api/students/{id}` | Update student by ID |
+| DELETE | `/api/students/{id}` | Delete student by ID |
 
-### Setup PostgreSQL Database
+---
 
-1. Create database named `studentsdb`.
-2. Use username: `postgres` and password: `1234` (update in `application.properties` if needed).
+## 🛠️ Setup Instructions
 
-### Running the Project
-
-Clone the repo:
-
-```bash
-git clone https://github.com/<your-github-username>/smart-student-portal.git
-cd smart-student-portal
+1. Clone the repo  
